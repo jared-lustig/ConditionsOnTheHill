@@ -4,7 +4,7 @@
 
 2. Follow instructions on this page -> https://blog.nillsf.com/index.php/2020/06/29/how-to-automatically-start-the-docker-daemon-on-wsl2/
 
-3. docker run jaredlustig/conditions-on-the-hill:1.0
+3. Click green box in bottom left (you may need to install remote containers extension in vscode), there should be a "Re-open in container" option.
 
 
 ### DEVELOPER NOTES
