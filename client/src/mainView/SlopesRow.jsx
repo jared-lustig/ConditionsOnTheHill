@@ -11,6 +11,12 @@ import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
+import sun from "../icons/sun.png";
+import suncloud from "../icons/suncloud.png";
+import cloud from "../icons/cloud.svg";
+import rain from "../icons/rain.png";
+import snow from "../icons/snow.png";
+
 const SlopesRow = (props) => {
     const { row } = props;
     const [open, setOpen] = React.useState(false);
@@ -37,7 +43,7 @@ const SlopesRow = (props) => {
             {row.hill}
           </TableCell>
           <TableCell align="right">{row.weatherreport.current.temperature}{"\u00B0"}F</TableCell>
-          <TableCell align="right">{row.currentbase}in</TableCell>
+          <TableCell align="right">{row.currentbase}"</TableCell>
           <TableCell align="right"><a href={row.websiteprices}>${row.price.adultfull}</a></TableCell>
         </TableRow>
         <TableRow>
@@ -64,8 +70,12 @@ const SlopesRow = (props) => {
                           {row.day}
                         </TableCell>
                         <TableCell>{row.conditions.temperature}{"\u00B0"}F</TableCell>
-                        <TableCell>{row.conditions.snowinches}in</TableCell>
+                        <TableCell>{row.conditions.snowinches}"</TableCell>
                         <TableCell>{row.conditions.wind}mph</TableCell>
+                        <TableCell><img src={row.conditions.sun === "sun" ? sun : 
+                                             row.conditions.sun === "suncloud" ? suncloud :
+                                             row.conditions.sun === "cloud" ? cloud :
+                                             row.conditions.sun === "rain" ? rain : snow} width="25" height="25"/></TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
