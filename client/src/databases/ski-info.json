@@ -1,0 +1,87 @@
+[
+    {
+        "hill" : "Bluewood",
+        "location":{
+            "lat" : 46.092124053396184,
+            "long" :  -117.85348480000002
+        },
+        "weatherreport":{
+            "prevDay3": {
+                "temperature": 32,
+                "snowinches": 2
+            },
+            "prevDay2": {
+                "temperature": 22,
+                "snowinches": 4
+            },
+            "prevDay1": {
+                "temperature": 19,
+                "snowinches": 0
+            },
+            "current": {
+                "temperature": 25,
+                "snowinches": 0
+            },
+            "futureDay1": {
+                "temperature": 35,
+                "snowinches": 2
+            },
+            "futureDay2": {
+                "temperature": 22,
+                "snowinches": 3
+            },
+            "futureDay3": {
+                "temperature": 33,
+                "snowinches": 0
+            }
+        },
+        "currentbase" : 55,
+        "price":{
+            "adultfull": 65
+        },
+        "websiteprices" : "https://bluewood.com/tickets"
+    },
+    {
+        "hill" : "Whitepass",
+        "location":{
+            "lat" : 46.66677018224555,
+            "long" :  -121.3802342293102
+        },
+        "weatherreport":{
+            "prevDay3": {
+                "temperature": 32,
+                "snowinches": 2
+            },
+            "prevDay2": {
+                "temperature": 22,
+                "snowinches": 4
+            },
+            "prevDay1": {
+                "temperature": 19,
+                "snowinches": 0
+            },
+            "current": {
+                "temperature": 25,
+                "snowinches": 0
+            },
+            "futureDay1": {
+                "temperature": 35,
+                "snowinches": 2
+            },
+            "futureDay2": {
+                "temperature": 22,
+                "snowinches": 3
+            },
+            "futureDay3": {
+                "temperature": 33,
+                "snowinches": 0
+            }
+        },
+        "currentbase" : 123,
+        "price":{
+            "adultfull": 75
+        },
+        "websiteprices" : "https://skiwhitepass.com/the-mountain/lift-tickets"
+    }
+
+]
