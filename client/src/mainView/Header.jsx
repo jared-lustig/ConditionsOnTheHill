@@ -1,6 +1,6 @@
 import { AppBar, Toolbar } from "@material-ui/core";
 import React from 'react';
-import ListSlopes from "./ListSlopes";
+import SlopesTable from "./SlopesTable";
 
 const Header = () => {
   
@@ -10,7 +10,7 @@ const Header = () => {
         <Toolbar> Conditions On The Hill </Toolbar> 
       </AppBar>
       <div style={{marginTop: "75px"}}>
-        <ListSlopes /> 
+        <SlopesTable /> 
       </div>
     </header>
   );

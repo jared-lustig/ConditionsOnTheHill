@@ -1,21 +1,16 @@
 import React, {useState} from 'react';
-import Box from '@mui/material/Box';
-import Collapse from '@mui/material/Collapse';
-import IconButton from '@mui/material/IconButton';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-import data from '../databases/ski-info.json'
+import SlopesRow from './SlopesRow';
 
-const ListSlopes = () => {
+import data from '../databases/ski-info.json';
 
-    const [open, setOpen] = React.useState(false);
+const SlopesTable = () => {
 
     return (
         <TableContainer>
@@ -24,38 +19,22 @@ const ListSlopes = () => {
                 <TableRow>
                     <TableCell></TableCell>
                     <TableCell>Ski Resort</TableCell>
-                    <TableCell align="right">Current Temperature</TableCell>
+                    <TableCell align="right">Current Temperature ({"\u00B0"}F)</TableCell>
                     <TableCell align="right">Current Base (inches)</TableCell>
-                    <TableCell align="right">Price</TableCell>
+                    <TableCell align="right">Price (USD)</TableCell>
                 </TableRow>
                 </TableHead>
                 <TableBody>
-                {data.map((row) => (
-                    <TableRow
-                    key={row.hill}
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                    >
-                    <TableCell>
-                        <IconButton
-                            aria-label="expand row"
-                            size="small"
-                            onClick={() => setOpen(!open)}>
-                            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-                        </IconButton>
-                    </TableCell>
-                    <TableCell>{row.hill}</TableCell>
-                    <TableCell align="right">{row.weatherreport.current.temperature}</TableCell>
-                    <TableCell align="right">{row.currentbase}</TableCell>
-                    <TableCell align="right"><a href={row.websiteprices}>{row.price.adultfull}</a></TableCell>
-                    </TableRow>
-                ))}
+                    {data.map((row) => (
+                        <SlopesRow key={row.hill} row={row} />
+                    ))}
                 </TableBody>
             </Table>
         </TableContainer>
     );
 }
 
-export default ListSlopes;
+export default SlopesTable;
 
 // <TableCell align="right">{row.currentbase}</TableCell>
 // <TableCell align="right">{row.price.adultful}</TableCell>

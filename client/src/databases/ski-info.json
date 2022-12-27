@@ -8,31 +8,38 @@
         "weatherreport":{
             "prevDay3": {
                 "temperature": 32,
-                "snowinches": 2
+                "snowinches": 2,
+                "wind": 22
             },
             "prevDay2": {
                 "temperature": 22,
-                "snowinches": 4
+                "snowinches": 4,
+                "wind": 22
             },
             "prevDay1": {
                 "temperature": 19,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             },
             "current": {
                 "temperature": 25,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             },
             "futureDay1": {
                 "temperature": 35,
-                "snowinches": 2
+                "snowinches": 2,
+                "wind": 22
             },
             "futureDay2": {
                 "temperature": 22,
-                "snowinches": 3
+                "snowinches": 3,
+                "wind": 22
             },
             "futureDay3": {
                 "temperature": 33,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             }
         },
         "currentbase" : 55,
@@ -50,31 +57,38 @@
         "weatherreport":{
             "prevDay3": {
                 "temperature": 32,
-                "snowinches": 2
+                "snowinches": 2,
+                "wind": 22
             },
             "prevDay2": {
                 "temperature": 22,
-                "snowinches": 4
+                "snowinches": 4,
+                "wind": 22
             },
             "prevDay1": {
                 "temperature": 19,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             },
             "current": {
                 "temperature": 25,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             },
             "futureDay1": {
                 "temperature": 35,
-                "snowinches": 2
+                "snowinches": 2,
+                "wind": 22
             },
             "futureDay2": {
                 "temperature": 22,
-                "snowinches": 3
+                "snowinches": 3,
+                "wind": 22
             },
             "futureDay3": {
                 "temperature": 33,
-                "snowinches": 0
+                "snowinches": 0,
+                "wind": 22
             }
         },
         "currentbase" : 123,
